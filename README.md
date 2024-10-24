@@ -1,150 +1,93 @@
-# Project
-We have trained, fine-tuned and played around with the existing Prithvi_vit_100 model on the fire_scar dataset. We Synced wandb to check for the accuracy scores and losses. Used the IoU metric to compare with the ground truth mask.
+Here’s a revised version of your README file with clearer structure and improved formatting:
 
-# Tuning 
-Epochs trained - 50
-model accuracy - 97.486
-learning rate -  0.0003 
+---
 
-# Tools and Frameworks Used
+# Fire Scar Detection Using Prithvi_ViT_100
 
-Prithvi_ViT_100: Vision Transformer model architecture used for image classification.
+We trained, fine-tuned, and evaluated the **Prithvi_ViT_100** model on the **Fire_Scar** dataset. We utilized **Weights and Biases (wandb)** for tracking accuracy scores and losses, and calculated the **Intersection over Union (IoU)** metric to compare the model's predictions with the ground truth masks.
 
-Weights and Biases (wandb): Used for experiment tracking, visualizations, and logging.
+## Model Training Summary
 
-Terra_torch library for building model.
+- **Model:** Prithvi_ViT_100 (Vision Transformer architecture for image classification).
+- **Dataset:** Fire_Scar dataset.
+- **Metric:** Intersection over Union (IoU).
+- **WandB:** Used to track accuracy scores, losses, and other key metrics.
 
-Prithvi_ViT_100 Model Training and Parameter Tuning
+### Tuning Details
 
-# Hackathon Evaluation Details
+- **Epochs Trained:** 50
+- **Model Accuracy:** 97.486%
+- **Learning Rate:** 0.0003
+
+## Tools and Frameworks Used
+
+- **Prithvi_ViT_100:** A Vision Transformer model architecture used for image classification tasks.
+- **Weights & Biases (wandb):** Experiment tracking, visualizations, and logging tool used to monitor model performance.
+- **TerraTorch:** Deep learning framework used to build, train, and fine-tune the model.
+
+---
+
+## Hackathon Evaluation Requirements
+
 Participants must provide the following:
 
-Training Notebook:
+### 1. **Training Notebook:**
 
-A Jupyter Notebook to run the model training.
-Include the trained model weights and necessary logs.
-Ensure the notebook is easy to run for the judges.
-Model Improvement Documentation:
+- A Jupyter Notebook for model training.
+- Must include the trained model weights, logs, and metrics.
+- Ensure the notebook is easy to run and well-documented for the judges.
 
-A comprehensive list of attempts to improve model performance.
-Include results for each attempt.
-Judges will evaluate the level of effort, decision-making process, and results.
-Performance Metrics Calculation:
+### 2. **Model Improvement Documentation:**
 
-Calculate Intersection over Union (IoU) as the performance metric.
-See inference_terratorch.ipynb for details on testing the model.
-Inference Notebook:
+- A comprehensive list of attempts to improve model performance.
+- Include results and explanations for each attempt.
+- Judges will evaluate the effort, decision-making process, and final results.
 
-A final notebook to run model inference.
-The test split will not be provided but will have the same format as the training/validation data.
-Judges will use this notebook to calculate the IoU score, so ensure all steps are clearly shown.
-The notebook will be run with a held-out set of data, so do not expect 100% accuracy.
-TerraTorch Documentation:
+### 3. **Performance Metrics Calculation:**
 
-Refer to the config_explainer.md file for more details. You need to understand the configuration details for potential model improvements.
-Refer to the TerraTorch Quick Start documentation for more details on running model inference and configuration details.
-We have trained, fine-tuned and played around with the existing Prithvi_vit_100 model on the fire_scar dataset, and successfully ended up with a accuProject
-We have trained, fine-tuned and played around with the existing Prithvi_vit_100 model on the fire_scar dataset, and successfully ended up with a accuracy of 98.40. We Synced wandb to check for the accuracy scores and losses. 
+- **Metric:** Intersection over Union (IoU).
+- Use the formula:
 
+  $$ \text{IoU} = \frac{\text{True Positive}}{\text{True Positive} + \text{False Positive} + \text{False Negative}} $$
 
+- Refer to `inference_terratorch.ipynb` for model testing details.
 
-# Tools and Frameworks Used
+### 4. **Inference Notebook:**
 
-Prithvi_ViT_100: Vision Transformer model architecture used for image classification.
+- A Jupyter Notebook for running model inference.
+- The test dataset will not be provided but will follow the same format as the training/validation data.
+- Ensure all inference steps are clearly shown and easy to follow.
+- The notebook will be used by judges to calculate the IoU score with a held-out set of data (expect less than 100% accuracy).
 
-Weights and Biases (wandb): Used for experiment tracking, visualizations, and logging.
+### 5. **TerraTorch Documentation:**
 
-Terra_torch: Deep learning framework for building and training the model.
+- Refer to `config_explainer.md` for detailed configuration explanations.
+- Understand the configuration for potential model improvements.
+- Use the **TerraTorch Quick Start documentation** to run model inference and understand configuration options.
 
-Prithvi_ViT_100 Model Training and Parameter Tuning
+---
 
-# Hackathon Evaluation Details
-Participants must provide the following:
+## Prithvi_ViT_100 Model Training and Parameter Tuning
 
-Training Notebook:
+During our experimentation with the **Prithvi_ViT_100** model on the **Fire_Scar** dataset, we achieved an accuracy of **98.40%**. WandB was used for experiment tracking to monitor accuracy scores and losses, and IoU was computed to measure the performance.
 
-A Jupyter Notebook to run the model training.
-Include the trained model weights and necessary logs.
-Ensure the notebook is easy to run for the judges.
-Model Improvement Documentation:
+### Model Tuning Overview:
 
-A comprehensive list of attempts to improve model performance.
-Include results for each attempt.
-Judges will evaluate the level of effort, decision-making process, and results.
-Performance Metrics Calculation:
+- **Model Accuracy:** 97.40%
+- **Training Epochs:** 50
+- **Learning Rate:** 0.0003
 
-Calculate Intersection over Union (IoU) as the performance metric.
-See inference_terratorch.ipynb for details on testing the model.
-Inference Notebook:
+---
 
-A final notebook to run model inference.
-The test split will not be provided but will have the same format as the training/validation data.
-Judges will use this notebook to calculate the IoU score, so ensure all steps are clearly shown.
-The notebook will be run with a held-out set of data, so do not expect 100% accuracy.
-TerraTorch Documentation:
+## Metric Used: IoU Calculation
 
-Refer to the config_explainer.md file for more details. You need to understand the configuration details for potential model improvements.
-Refer to the TerraTorch Quick Start documentation for more details on running model inference and configuration details.
-We have trained, fine-tuned and played around with the existing Prithvi_vit_100 model on the fire_scar dataset, and successfully ended up with a accuracy of 98.40. We Synced wandb to check for the accuracy scores and losses. 
+The **Intersection over Union (IoU)** was used as the primary performance metric to evaluate the model's segmentation accuracy. The formula for IoU is:
 
+$$ \text{IoU} = \frac{\text{True Positive}}{\text{True Positive} + \text{False Positive} + \text{False Negative}} $$
 
+---
 
-# Tools and Frameworks Used
+### Final Notes
 
-Prithvi_ViT_100: Vision Transformer model architecture used for image classification.
+Ensure that all notebooks, logs, and trained model weights are well-organized and easy to follow for the judges. The documentation should clearly explain each step in the model training, fine-tuning, and inference process.
 
-Weights and Biases (wandb): Used for experiment tracking, visualizations, and loggingracy of 98.40. We Synced wandb to check for the accuracy scores and losses. 
-
-
-
-# Tools and Frameworks Used
-
-Prithvi_ViT_100: Vision Transformer model architecture used for image classification.
-
-Weights and Biases (wandb): Used for experiment tracking, visualizations, and logging.
-
-Terra_torch: Deep learning framework for building and training the model.
-
-Prithvi_ViT_100 Model Training and Parameter Tuning
-
-# Hackathon Evaluation Details
-Participants must provide the following:
-
-Training Notebook:
-
-A Jupyter Notebook to run the model training.
-Include the trained model weights and necessary logs.
-Ensure the notebook is easy to run for the judges.
-Model Improvement Documentation:
-
-A comprehensive list of attempts to improve model performance.
-Include results for each attempt.
-Judges will evaluate the level of effort, decision-making process, and results.
-Performance Metrics Calculation:
-
-Calculate Intersection over Union (IoU) as the performance metric.
-See inference_terratorch.ipynb for details on testing the model.
-Inference Notebook:
-
-A final notebook to run model inference.
-The test split will not be provided but will have the same format as the training/validation data.
-Judges will use this notebook to calculate the IoU score, so ensure all steps are clearly shown.
-The notebook will be run with a held-out set of data, so do not expect 100% accuracy.
-TerraTorch Documentation:
-
-Refer to the config_explainer.md file for more details. You need to understand the configuration details for potential model improvements.
-Refer to the TerraTorch Quick Start documentation for more details on running model inference and configuration details.
-
-# Metric
-IoU Metric Calculation was used 
-
-Formula: $$ IoU = \frac{True Positive}{True Positive + False Positive + False Negative} $$
-
- 
-
-# Metric
-IoU Metric Calculation was used 
-
-Formula: $$ IoU = \frac{True Positive}{True Positive + False Positive + False Negative} $$
-
- 
