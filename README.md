@@ -3,8 +3,9 @@ We have trained, fine-tuned and played around with the existing Prithvi_vit_100 
 
 # Tuning 
 Epochs trained - 50
-model accuracy - 98.244
-learning rate 
+model accuracy - 97.486
+learning rate -  0.0003 
+
 # Tools and Frameworks Used
 
 Prithvi_ViT_100: Vision Transformer model architecture used for image classification.
