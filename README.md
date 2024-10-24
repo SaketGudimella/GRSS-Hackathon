@@ -1,7 +1,3 @@
-Here’s a revised version of your README file with clearer structure and improved formatting:
-
----
-
 # Fire Scar Detection Using Prithvi_ViT_100
 
 We trained, fine-tuned, and evaluated the **Prithvi_ViT_100** model on the **Fire_Scar** dataset. We utilized **Weights and Biases (wandb)** for tracking accuracy scores and losses, and calculated the **Intersection over Union (IoU)** metric to compare the model's predictions with the ground truth masks.
