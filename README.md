@@ -81,6 +81,17 @@ The **Intersection over Union (IoU)** was used as the primary performance metric
 
 $$ \text{IoU} = \frac{\text{True Positive}}{\text{True Positive} + \text{False Positive} + \text{False Negative}} $$
 
+#Final model Wandb workspace: https://wandb.ai/intern_test/uncategorized/runs/ifh66stm?nw=nwuserkushpuro
+
+# Final Accuracy Score (Wandb):
+![Screenshot 2024-10-24 105948](https://github.com/user-attachments/assets/13466738-25ba-4aa0-b377-8307ca7f698d)
+![Screenshot 2024-10-24 110003](https://github.com/user-attachments/assets/81afd5e1-0030-4770-a449-f9af06b9480d)
+
+
+# Final Model Results:
+![image](https://github.com/user-attachments/assets/421e679c-6d96-429a-9051-b08c78bc4fca)
+
+# Final model Version : 18
 ---
 
 ### Final Notes
