@@ -85,6 +85,10 @@ The **Intersection over Union (IoU)** was used as the primary performance metric
 
 $$ \text{IoU} = \frac{\text{True Positive}}{\text{True Positive} + \text{False Positive} + \text{False Negative}} $$
 
+# Final Accuracy Score:
+
+![image](https://github.com/user-attachments/assets/421e679c-6d96-429a-9051-b08c78bc4fca)
+
 ---
 
 ### Final Notes
